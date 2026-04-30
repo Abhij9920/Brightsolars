@@ -71,4 +71,15 @@ body {
   }
 }
 
+/* =========================================
+   Remove all glow / shadow from Navbar
+   ========================================= */
+nav, nav * {
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
 
+nav a, nav button {
+  outline: none !important;
+  box-shadow: none !important;
+}
