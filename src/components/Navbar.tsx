@@ -6,26 +6,26 @@ import { COMPANY, NAV_LINKS } from "@/lib/content";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-black/10 backdrop-blur-md">
       <div className="flex items-center justify-between px-4 py-4 md:py-5 max-w-7xl mx-auto">
         {/* Logo */}
         <Link
           href={"/"}
-          className="flex items-center gap-2 md:gap-3 text-[#16a34a]"
+          className="flex items-center gap-2 md:gap-3"
         >
-          <PiSolarPanelBold className="w-7 h-7 md:w-9 md:h-9" />
-          <span className="md:text-xl font-extrabold text-slate-800 tracking-tight">
+          <PiSolarPanelBold className="w-7 h-7 md:w-9 md:h-9 text-[#16a34a]" />
+          <span className="md:text-xl font-extrabold text-white tracking-tight">
             {COMPANY.name}
           </span>
         </Link>
 
         {/* Desktop Nav Links */}
-        <div className="hidden md:flex items-center gap-8 font-semibold text-base text-slate-700">
+        <div className="hidden md:flex items-center gap-8 font-semibold text-base text-white">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="hover:text-[#16a34a] transition-colors duration-200"
+              className="hover:text-[#4ade80] transition-colors duration-200"
             >
               {link.label}
             </Link>
