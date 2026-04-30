@@ -6,37 +6,44 @@ import { COMPANY, NAV_LINKS } from "@/lib/content";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-md bg-opacity-45 ">
-      <div className="flex items-center justify-between px-4 py-5 md:py-6 max-w-7xl mx-auto">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+      <div className="flex items-center justify-between px-4 py-4 md:py-5 max-w-7xl mx-auto">
+        {/* Logo */}
         <Link
           href={"/"}
-          className="flex items-center gap-1 md:gap-3 text-[#32C36C]"
+          className="flex items-center gap-2 md:gap-3 text-[#16a34a]"
         >
-          <PiSolarPanelBold className="w-8 h-8 md:w-10 md:h-10" />
-          <h1 className=" md:text-xl font-extrabold ">{COMPANY.name}</h1>
+          <PiSolarPanelBold className="w-7 h-7 md:w-9 md:h-9" />
+          <span className="md:text-xl font-extrabold text-slate-800 tracking-tight">
+            {COMPANY.name}
+          </span>
         </Link>
-        <div className="hidden md:flex items-center justify-between  md:gap-8 font-semibold text-lg text-[#32C36C] ">
+
+        {/* Desktop Nav Links */}
+        <div className="hidden md:flex items-center gap-8 font-semibold text-base text-slate-700">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="hover:text-[#32C36C] hover:scale-105 duration-300 ease-linear transition"
+              className="hover:text-[#16a34a] transition-colors duration-200"
             >
               {link.label}
             </Link>
           ))}
         </div>
-        <div className="flex items-center justify-between  gap-2">
+
+        {/* CTA + Mobile Menu */}
+        <div className="flex items-center gap-2">
           <Button
             size={"sm"}
-            className="bg-[#32C36C] hover:bg-[#2B9A5A] md:hidden flex items-center justify-center"
+            className="bg-[#16a34a] hover:bg-[#15803d] md:hidden flex items-center justify-center shadow-none"
             asChild
           >
             <Link href={"/quote"}>Get a Free Quote</Link>
           </Button>
           <Button
-            size={"lg"}
-            className="bg-[#32C36C] hover:bg-[#2B9A5A] hidden md:flex items-center justify-center"
+            size={"default"}
+            className="bg-[#16a34a] hover:bg-[#15803d] hidden md:flex items-center justify-center shadow-none"
             asChild
           >
             <Link href={"/quote"}>Get a Free Quote</Link>
