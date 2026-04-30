@@ -1,0 +1,107 @@
+
+> brightsolarswebsite@0.1.0 build
+> next build
+
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\abhij\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\abhij\Downloads\sbn-solar-company-website-main\package-lock.json
+   * C:\Users\abhij\Downloads\pnpm-lock.yaml
+
+▲ Next.js 16.2.4 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 4 errors:
+./Downloads/sbn-solar-company-website-main/sanity.config.ts:12:1
+Module not found: Can't resolve './src/sanity/env'
+  [90m10 |[0m
+  [90m11 |[0m [90m// Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works[0m
+[31m[1m>[0m [90m12 |[0m [36mimport[0m {apiVersion, dataset, projectId} [36mfrom[0m [32m'./src/sanity/env'[0m
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m13 |[0m [36mimport[0m {schema} [36mfrom[0m [32m'./src/sanity/schemaTypes'[0m
+  [90m14 |[0m [36mimport[0m {structure} [36mfrom[0m [32m'./src/sanity/structure'[0m
+  [90m15 |[0m
+
+
+
+Import trace:
+  Server Component:
+    ./Downloads/sbn-solar-company-website-main/sanity.config.ts
+    ./Downloads/sbn-solar-company-website-main/src/app/dashboard/[[...tool]]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Downloads/sbn-solar-company-website-main/sanity.config.ts:13:1
+Module not found: Can't resolve './src/sanity/schemaTypes'
+  [90m11 |[0m [90m// Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works[0m
+  [90m12 |[0m [36mimport[0m {apiVersion, dataset, projectId} [36mfrom[0m [32m'./src/sanity/env'[0m
+[31m[1m>[0m [90m13 |[0m [36mimport[0m {schema} [36mfrom[0m [32m'./src/sanity/schemaTypes'[0m
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m14 |[0m [36mimport[0m {structure} [36mfrom[0m [32m'./src/sanity/structure'[0m
+  [90m15 |[0m
+  [90m16 |[0m [36mexport[0m [36mdefault[0m defineConfig({
+
+
+
+Import trace:
+  Server Component:
+    ./Downloads/sbn-solar-company-website-main/sanity.config.ts
+    ./Downloads/sbn-solar-company-website-main/src/app/dashboard/[[...tool]]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Downloads/sbn-solar-company-website-main/sanity.config.ts:14:1
+Module not found: Can't resolve './src/sanity/structure'
+  [90m12 |[0m [36mimport[0m {apiVersion, dataset, projectId} [36mfrom[0m [32m'./src/sanity/env'[0m
+  [90m13 |[0m [36mimport[0m {schema} [36mfrom[0m [32m'./src/sanity/schemaTypes'[0m
+[31m[1m>[0m [90m14 |[0m [36mimport[0m {structure} [36mfrom[0m [32m'./src/sanity/structure'[0m
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m15 |[0m
+  [90m16 |[0m [36mexport[0m [36mdefault[0m defineConfig({
+  [90m17 |[0m   basePath: [32m'/dashboard'[0m,
+
+
+
+Import trace:
+  Server Component:
+    ./Downloads/sbn-solar-company-website-main/sanity.config.ts
+    ./Downloads/sbn-solar-company-website-main/src/app/dashboard/[[...tool]]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Downloads/sbn-solar-company-website-main/sanity.config.ts:7:1
+Module not found: Can't resolve '@sanity/vision'
+  [90m 5 |[0m [90m */[0m
+  [90m 6 |[0m
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m {visionTool} [36mfrom[0m [32m'@sanity/vision'[0m
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m [36mimport[0m {defineConfig} [36mfrom[0m [32m'sanity'[0m
+  [90m 9 |[0m [36mimport[0m {structureTool} [36mfrom[0m [32m'sanity/structure'[0m
+  [90m10 |[0m
+
+
+
+Import trace:
+  Server Component:
+    ./Downloads/sbn-solar-company-website-main/sanity.config.ts
+    ./Downloads/sbn-solar-company-website-main/src/app/dashboard/[[...tool]]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (./Downloads/sbn-solar-company-website-main/sanity.config.ts:12:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./Downloads/sbn-solar-company-website-main/sanity.config.ts:13:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./Downloads/sbn-solar-company-website-main/sanity.config.ts:14:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./Downloads/sbn-solar-company-website-main/sanity.config.ts:7:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
