@@ -7,7 +7,7 @@ import ConditionalLayout from "@/components/ConditionalLayout";
 export const metadata: Metadata = {
   title: `${COMPANY.name} — ${COMPANY.tagline}`,
   description:
-    "CEC accredited solar installers servicing homes and businesses across Victoria. Residential and commercial solar panels, battery storage, inverters and EV charging.",
+    "Solar installers servicing homes and businesses across Victoria. Residential and commercial solar panels, battery storage, inverters and EV charging.",
 };
 
 export default function RootLayout({
