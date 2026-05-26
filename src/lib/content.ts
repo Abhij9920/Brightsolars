@@ -12,7 +12,7 @@ export const COMPANY = {
   email: "info@brightsolars.com.au",
   address: "Victoria, Australia",
   abn: "66 591 610 1",
-  accreditation: "CEC Accredited Installer",
+  accreditation: "Licensed Solar Installer",
   socials: {
     facebook: "https://facebook.com",
     instagram: "https://instagram.com",
@@ -36,7 +36,7 @@ export const HERO_SLIDES = [
     image: "/images/carousel-1.jpg",
     heading: "Victoria's Trusted Solar Experts",
     subheading:
-      "CEC accredited residential and commercial solar installations across Melbourne and regional Victoria.",
+      "Residential and commercial solar installations across Melbourne and regional Victoria.",
     cta: { label: "Get a Free Quote", href: "/quote" },
     ctaSecondary: { label: "Our Products", href: "/products" },
   },
@@ -97,7 +97,7 @@ export const HOW_IT_WORKS = [
     step: "03",
     title: "We install your system",
     description:
-      "Our CEC-accredited installers handle everything — panels, inverter, battery, and grid connection.",
+      "Our qualified installers handle everything — panels, inverter, battery, and grid connection.",
   },
   {
     step: "04",
@@ -110,9 +110,9 @@ export const HOW_IT_WORKS = [
 // ─── ABOUT PAGE ──────────────────────────────────────────────
 export const ABOUT = {
   heading: "10+ Years Experience In Solar & Renewable Energy",
-  body: "Brightsolars is a CEC accredited solar installer servicing homes and businesses across Victoria. We specialise in residential and commercial solar panels, battery storage, inverters and EV charging — supplying only the most trusted brands in the industry including Jinko, Canadian Solar, Tesla Powerwall, Fronius and Sungrow.",
+  body: "Brightsolars is a leading solar installer servicing homes and businesses across Victoria. We specialise in residential and commercial solar panels, battery storage, inverters and EV charging — supplying only the most trusted brands in the industry including Jinko, Canadian Solar, Tesla Powerwall, Fronius and Sungrow.",
   bullets: [
-    "CEC Accredited Installers",
+    "Qualified Solar Installers",
     "Premium brands — Jinko, Fronius, Tesla Powerwall",
     "Full installation and aftercare support",
     "Servicing all of Victoria",
@@ -121,7 +121,7 @@ export const ABOUT = {
   whyChooseUs: {
     heading: "Why Choose Brightsolars?",
     subheading: "Complete Commercial & Residential Solar Solutions",
-    body: "From your first consultation to ongoing maintenance, we are with you every step of the way. Our in-house team of CEC accredited engineers and installers ensure your system is designed and built to last.",
+    body: "From your first consultation to ongoing maintenance, we are with you every step of the way. Our in-house team of qualified engineers and installers ensure your system is designed and built to last.",
     points: [
       { label: "Quality", sublabel: "Products" },
       { label: "Expert", sublabel: "Workers" },
@@ -136,7 +136,7 @@ export const TEAM = [
     name: "James Carter",
     role: "Managing Director",
     image: "/images/team-1.jpg",
-    bio: "15+ years in the solar industry. CEC accredited engineer and founder of Brightsolars.",
+    bio: "15+ years in the solar industry. Qualified engineer and founder of Brightsolars.",
   },
   {
     name: "Sarah Mitchell",
@@ -148,7 +148,7 @@ export const TEAM = [
     name: "David Nguyen",
     role: "Head of Installations",
     image: "/images/team-3.jpg",
-    bio: "CEC accredited installer with over 300 residential and commercial installations completed.",
+    bio: "Qualified installer with over 300 residential and commercial installations completed.",
   },
   {
     name: "Emily Tran",
@@ -167,11 +167,11 @@ export const SERVICES = [
     shortDesc:
       "Rooftop solar systems designed and installed for Victorian homes.",
     fullDesc:
-      "We design, supply and install complete residential solar systems tailored to your home's energy needs. From initial assessment through to grid connection and government rebate paperwork, our CEC accredited team handles everything. We use only Tier 1 panels from brands like Jinko, Canadian Solar and Trina to ensure maximum output and long-term reliability.",
+      "We design, supply and install complete residential solar systems tailored to your home's energy needs. From initial assessment through to grid connection and government rebate paperwork, our qualified team handles everything. We use only Tier 1 panels from brands like Jinko, Canadian Solar and Trina to ensure maximum output and long-term reliability.",
     features: [
       "Free on-site consultation and energy assessment",
       "Tier 1 panels — Jinko, Canadian Solar, Trina, REC, Longi",
-      "CEC accredited installation team",
+      "Qualified installation team",
       "Full grid connection and rebate assistance",
       "10-year workmanship warranty",
     ],
@@ -791,7 +791,7 @@ export const QUOTE_FIELDS = {
 // ─── FOOTER ──────────────────────────────────────────────────
 export const FOOTER = {
   description:
-    "CEC accredited solar installers servicing homes and businesses across Victoria. Residential and commercial solar panels, battery storage, inverters and EV charging.",
+    "Solar installers servicing homes and businesses across Victoria. Residential and commercial solar panels, battery storage, inverters and EV charging.",
   quickLinks: [
     { label: "About Us", href: "/about" },
     { label: "Our Services", href: "/service" },
@@ -808,5 +808,5 @@ export const FOOTER = {
     { label: "Inverters", href: "/service#inverters" },
     { label: "Maintenance", href: "/service#maintenance" },
   ],
-  copyright: `© ${new Date().getFullYear()} Brightsolars Pty Ltd. All Rights Reserved. | CEC Accredited Installer | ABN 66 591 610 1`,
+  copyright: `© ${new Date().getFullYear()} Brightsolars Pty Ltd. All Rights Reserved. | Licensed Solar Installer | ABN 66 591 610 1`,
 };
