@@ -11,8 +11,8 @@ export const COMPANY = {
   phone: "1300 XXX XXX",
   email: "info@brightsolars.com.au",
   address: "Victoria, Australia",
-  abn: "66 591 610 1",
-  accreditation: "Licensed Solar Installer",
+  acn: "665 916 101",
+  accreditation: "Solar Installer",
   socials: {
     facebook: "https://facebook.com",
     instagram: "https://instagram.com",
@@ -808,5 +808,5 @@ export const FOOTER = {
     { label: "Inverters", href: "/service#inverters" },
     { label: "Maintenance", href: "/service#maintenance" },
   ],
-  copyright: `© ${new Date().getFullYear()} Brightsolars Pty Ltd. All Rights Reserved. | Licensed Solar Installer | ABN 66 591 610 1`,
+  copyright: `© ${new Date().getFullYear()} Bright Solar Pty Ltd. All Rights Reserved. | ACN 665 916 101`,
 };
